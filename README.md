@@ -6,8 +6,8 @@ Verificar a versão do Ubuntu utilizada, no terminal execute:
 Instalar o servidor DHCP com o seguinte comando:
 `sudo apt install isc-dhcp-server`
 ## - Passo 3
-Insira a letra S para confirmar o download e a instalação do serviço:
+Insira a letra "S" para confirmar o download e a instalação do serviço:
 `S`
 ## - Passo 4
-Configurar a placa de rede, deve-se editar o arquivo isc-dhcp-server para definir os valores associados à placa de rede e assim oferecer de forma abrangente o que o DHCP oferece:
+Configurar a placa de rede, deve-se editar o arquivo "isc-dhcp-server" para definir os valores associados à placa de rede e assim oferecer de forma abrangente o que o DHCP oferece:
 `sudo nano / etc / default / isc-dhcp-server`
