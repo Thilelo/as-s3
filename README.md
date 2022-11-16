@@ -1,4 +1,4 @@
-# Como instalar e configurar o DHCP no Ubuntu 20.04 `0969DA`
+# Como instalar e configurar o DHCP no Ubuntu 20.04
 ## - Passo 1
 Verificar a versão do Ubuntu utilizada, execute no terminal:
 
@@ -80,3 +80,5 @@ Salvamos as alterações no arquivo, vamos para a área de trabalho do Ubuntu e 
 O seguinte será exibido:
 
 ![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_14.png.webp)
+
+- Fonte: [Smartworldclub.net](https://smartworldclub.net/11703951-install-and-configure-dhcp-server-in-ubuntu-21-04-and-20-04)
