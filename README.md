@@ -17,7 +17,6 @@ Configurar a placa de rede, deve-se editar o arquivo "isc-dhcp-server" para defi
 `sudo nano /etc/default/isc-dhcp-server`
 
 ![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_5.png.webp)
-
 ## - Passo 5
 Essas linhas que vemos são:
 - INTERFACESv4: configurar o endereçamento IPv4 
@@ -32,7 +31,7 @@ Lá é necessário saber o ID da placa de rede, por isso devemos fazer o seguint
 ## - Passo 6
 Neste caso é "ens33", na seção INTERFACESv4 adicionamos este ID:
 
-![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_6.png.webp)
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_7.png.webp)
 
 Salvamos as alterações com as teclas Ctrl + O e saímos do editor com as teclas Ctrl + X.
 
@@ -47,10 +46,15 @@ Depois disso, vamos configurar a função DHCP no Ubuntu 20.04 ou 21.04, é poss
 Acessamos o arquivo de configuração:
 
  `sudo nano /etc/dhcp/dhcpd.conf`
+ 
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_8.png.webp)
+ 
  ## - Passo 8
 Lá vamos adicionar as seguintes linhas com os valores necessários:
 
 `sub-rede 192.168.xxx.xxx máscara de rede 255.255.255.0 intervalo 192.168.xxx.xxx; opção de servidores de nomes de domínio 8.8.8.8, 4.4.4.4; opção nome de domínio "nome"; roteadores de opção 192.168.xxx.xxx; opção de endereço de transmissão 192.168.xxx.255; default-lease-time 600; tempo máximo de locação 7200;`
+
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_9.png.webp)
 
 Salvamos as alterações com Ctrl + O e saímos com Ctrl + X.
 ## - Passo 9
@@ -67,7 +71,11 @@ Agora executamos o seguinte:
 ![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_10.png.webp)
 ## - Passo 10
 Para verificar se tudo funciona corretamente, em um computador cliente validamos os dados da placa de rede com o seguinte comando:
+
 `adicionar ip`
+
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_11.png.webp)
+
 ## - Passo 11
 Acessamos o arquivo de configuração DHCP:
 `sudo nano /etc/dhcp/dhcpd.conf`
@@ -75,8 +83,12 @@ Acessamos o arquivo de configuração DHCP:
 Neste arquivo, inserimos o seguinte:
 
 `Ubuntu host localhost`
+
 `hardware ethernet "endereço MAC"`
+
 `endereço fixo 192.168.xxx.xxx;`
+
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_12.png.webp)
 
 Observação: Este é um IP reservado para este computador.
 ## - Etapa 12
