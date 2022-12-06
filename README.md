@@ -14,7 +14,10 @@ Insira a letra "S" para confirmar o download e a instalação do serviço:
 ## - Passo 4
 Configurar a placa de rede, deve-se editar o arquivo "isc-dhcp-server" para definir os valores associados à placa de rede e assim oferecer de forma abrangente o que o DHCP oferece:
 
-`sudo nano / etc / default / isc-dhcp-server`
+`sudo nano /etc/default/isc-dhcp-server`
+
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_5.png.webp)
+
 ## - Passo 5
 Essas linhas que vemos são:
 - INTERFACESv4: configurar o endereçamento IPv4 
@@ -23,12 +26,16 @@ Essas linhas que vemos são:
 Lá é necessário saber o ID da placa de rede, por isso devemos fazer o seguinte:
 
 `adicionar ip`
+
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_6.png.webp)
+
 ## - Passo 6
 Neste caso é "ens33", na seção INTERFACESv4 adicionamos este ID:
 
-![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_7.png.webp)
+![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_6.png.webp)
 
 Salvamos as alterações com as teclas Ctrl + O e saímos do editor com as teclas Ctrl + X.
+
 ## - Passo 7
 Depois disso, vamos configurar a função DHCP no Ubuntu 20.04 ou 21.04, é possível configurar:
  - Endereços de servidor DNS
