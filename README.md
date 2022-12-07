@@ -24,7 +24,7 @@ Essas linhas que vemos são:
 
 Lá é necessário saber o ID da placa de rede, por isso devemos fazer o seguinte:
 
-`adicionar ip`
+`ip address`
 
 ![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_6.png.webp)
 
@@ -72,7 +72,7 @@ Agora executamos o seguinte:
 ## - Passo 10
 Para verificar se tudo funciona corretamente, em um computador cliente validamos os dados da placa de rede com o seguinte comando:
 
-`adicionar ip`
+`ip address`
 
 ![This is an image](https://cdn.smartworldclub.net/4685118/_instalar_y_configurar_servidor_dhcp_en_ubuntu_2104_y_2004_11.png.webp)
 
